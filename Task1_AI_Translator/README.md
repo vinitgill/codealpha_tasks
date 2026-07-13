@@ -1,6 +1,6 @@
 # AI Translator
 
-A full-stack AI-powered language translation tool with tone control, grammar correction, idiom explanations, and AI-generated speech — built as a college project to actually learn full-stack development and AI API integration, not just assemble a template.
+A full-stack AI-powered language translation tool with tone control, grammar correction, idiom explanations, and AI-generated speech  built as a college project to actually learn full-stack development and AI API integration, not just assemble a template.
 
 **Live demo:** [ai-translator-xi-seven.vercel.app](https://ai-translator-xi-seven.vercel.app)
 **Built by:** [Vinit Gill](https://github.com/vinitgill) · [LinkedIn](https://linkedin.com/in/vinitgill)
@@ -24,7 +24,7 @@ Most "AI translator" projects wrap a single API call in a form. This one goes fu
 
 **Backend:** FastAPI (Python) · Google Gemini API (translation, grammar, explanations, TTS) · httpx for direct API calls
 
-**Frontend:** Vanilla HTML/CSS/JavaScript — deliberately no framework, so every part of the app is understandable end-to-end without build tooling
+**Frontend:** Vanilla HTML/CSS/JavaScript  deliberately no framework, so every part of the app is understandable end-to-end without build tooling
 
 **Why this stack:** built to actually learn the fundamentals (what an API is, how a backend and frontend talk to each other, how AI prompts are structured) rather than lean on a framework's abstractions on a first full-stack project.
 
