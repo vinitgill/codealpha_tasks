@@ -2,7 +2,7 @@
 
 A full-stack AI-powered language translation tool with tone control, grammar correction, idiom explanations, and AI-generated speech — built as a college project to actually learn full-stack development and AI API integration, not just assemble a template.
 
-**Live demo:** _add your deployed link here once deployed_
+**Live demo:** [ai-translator-xi-seven.vercel.app](https://ai-translator-xi-seven.vercel.app)
 **Built by:** [Vinit Gill](https://github.com/vinitgill) · [LinkedIn](https://linkedin.com/in/vinitgill)
 
 ---
