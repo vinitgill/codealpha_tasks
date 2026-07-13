@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Translator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="topbar">
+      <div class="topbar-row">
+        <div class="brand">
+          <span class="brand-icon">⇄</span>
+          <span class="brand-name">AI Translator</span>
+          <span class="brand-tagline">every word, every voice</span>
+        </div>
+        <button id="theme-toggle" class="icon-btn" title="Toggle dark/light mode">🌙</button>
+      </div>
+      <div class="script-strip">नमस्ते · مرحبا · こんにちは · 안녕하세요 · привет · 你好 · hola · bonjour</div>
+    </header>
+
+    <main class="main">
+      <section class="translator-card">
+
+        <div class="controls-row">
+          <select id="target-language" class="select">
+            <option value="French" data-lang-code="fr-FR">French</option>
+            <option value="Spanish" data-lang-code="es-ES">Spanish</option>
+            <option value="German" data-lang-code="de-DE">German</option>
+            <option value="Hindi" data-lang-code="hi-IN">Hindi</option>
+            <option value="Japanese" data-lang-code="ja-JP">Japanese</option>
+            <option value="Chinese" data-lang-code="zh-CN">Chinese</option>
+            <option value="Italian" data-lang-code="it-IT">Italian</option>
+            <option value="Portuguese" data-lang-code="pt-PT">Portuguese</option>
+            <option value="Russian" data-lang-code="ru-RU">Russian</option>
+            <option value="Arabic" data-lang-code="ar-SA">Arabic</option>
+            <option value="Korean" data-lang-code="ko-KR">Korean</option>
+            <option value="Dutch" data-lang-code="nl-NL">Dutch</option>
+            <option value="Turkish" data-lang-code="tr-TR">Turkish</option>
+            <option value="Bengali" data-lang-code="bn-IN">Bengali</option>
+            <option value="Tamil" data-lang-code="ta-IN">Tamil</option>
+            <option value="Telugu" data-lang-code="te-IN">Telugu</option>
+            <option value="Marathi" data-lang-code="mr-IN">Marathi</option>
+            <option value="Punjabi" data-lang-code="pa-IN">Punjabi</option>
+            <option value="Urdu" data-lang-code="ur-PK">Urdu</option>
+            <option value="Vietnamese" data-lang-code="vi-VN">Vietnamese</option>
+            <option value="Thai" data-lang-code="th-TH">Thai</option>
+            <option value="Indonesian" data-lang-code="id-ID">Indonesian</option>
+            <option value="Polish" data-lang-code="pl-PL">Polish</option>
+            <option value="Greek" data-lang-code="el-GR">Greek</option>
+            <option value="Hebrew" data-lang-code="he-IL">Hebrew</option>
+            <option value="Swedish" data-lang-code="sv-SE">Swedish</option>
+            <option value="custom" data-lang-code="">Other (type below)...</option>
+          </select>
+          <input id="custom-language" class="select hidden" type="text" placeholder="Type a language..." />
+
+          <div class="tone-selector">
+            <button class="tone-btn active" data-tone="neutral">Neutral</button>
+            <button class="tone-btn" data-tone="formal">Formal</button>
+            <button class="tone-btn" data-tone="casual">Casual</button>
+            <button class="tone-btn" data-tone="business">Business</button>
+          </div>
+        </div>
+
+        <div class="text-panels">
+          <div class="panel">
+            <div class="panel-header">
+              <span>Original text</span>
+              <button id="grammar-btn" class="link-btn">✓ Fix grammar</button>
+            </div>
+            <textarea id="input-text" placeholder="Type or paste text to translate..." maxlength="2000"></textarea>
+            <div class="panel-footer">
+              <span id="char-count">0 / 2000</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <span>Translation <span id="detected-lang" class="detected-lang"></span></span>
+              <div class="panel-actions">
+                <button id="speak-btn" class="icon-btn small" title="Listen">🔊</button>
+                <button id="copy-btn" class="icon-btn small" title="Copy">📋</button>
+                <button id="download-btn" class="icon-btn small" title="Download">⬇️</button>
+              </div>
+            </div>
+            <div id="output-text" class="output-box" placeholder="Translation will appear here..."></div>
+          </div>
+        </div>
+
+        <button id="translate-btn" class="primary-btn">
+          <span id="translate-btn-text">Translate</span>
+        </button>
+
+        <div class="word-lookup">
+          <input id="word-input" type="text" placeholder="Look up a word or idiom (e.g. 'break the ice')..." />
+          <button id="explain-btn" class="secondary-btn">Explain</button>
+        </div>
+        <div id="explain-result" class="explain-box hidden"></div>
+
+      </section>
+
+      <aside class="history-panel">
+        <div class="history-header">
+          <span>History</span>
+          <button id="clear-history-btn" class="link-btn">Clear</button>
+        </div>
+        <div id="history-list" class="history-list">
+          <p class="empty-state">No translations yet</p>
+        </div>
+      </aside>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
