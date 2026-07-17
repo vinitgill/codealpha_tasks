@@ -22,6 +22,7 @@ A production-style computer vision application for real-time object detection an
 | Core libraries | OpenCV, PyTorch, Ultralytics, NumPy, Pillow | Industry-standard computer vision and ML stack |
 
 ## Project Structure
+```text
 ObjectDetectionAI/
 ├── app/                # Standalone demo scripts (webcam CLI demo)
 ├── analytics/          # Unique object counting logic
@@ -33,8 +34,7 @@ ObjectDetectionAI/
 ├── requirements.txt
 ├── README.md
 └── main.py
-
-
+```
 
 ## Setup Instructions
 
