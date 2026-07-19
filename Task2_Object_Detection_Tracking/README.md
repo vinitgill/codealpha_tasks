@@ -3,6 +3,7 @@
 A production-style computer vision application for real-time object detection and multi-object tracking, built with YOLO11 and BoT-SORT. Supports live webcam, image upload, and video upload — all through an interactive Streamlit dashboard.
 
 **Live demo:** [codealphatasks-9dcns2r3ccdvfzf66dzufw.streamlit.app/](https://codealphatasks-9dcns2r3ccdvfzf66dzufw.streamlit.app/)
+**Built by:** [Vinit Gill](https://github.com/vinitgill)
 
 ## Features
 
