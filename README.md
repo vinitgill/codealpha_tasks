@@ -1,3 +1,4 @@
+
 # CodeAlpha Internship Tasks
 
 This repository contains completed tasks for the CodeAlpha internship program.
@@ -5,6 +6,7 @@ This repository contains completed tasks for the CodeAlpha internship program.
 ## Tasks
 
 - **Task 1 — AI-Powered Language Translator**: [`Task1_AI_Translator/`](./Task1_AI_Translator)
+- aAI-powered multilingual translator with automatic language detection, real-time translation, speech-to-text, text-to-speech, and translation history. Deployed using React, FstAPI, and Vercel.
 - **Task 2 — Real-Time Object Detection and Multi-Object Tracking**: [`Task2_Object_Detection_Tracking/`](./Task2_Object_Detection_Tracking) — YOLO11 + BoT-SORT based real-time detection and tracking system with a Streamlit dashboard supporting webcam, image, and video input.
 
 ## Author
